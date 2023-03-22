@@ -28,8 +28,7 @@ void mergeSort(int pData[], int l, int r)
 
 		int *L = (int*) malloc(n1*sizeof(int));
 		int *R = (int*) malloc(n2*sizeof(int));
-		//extraMemoryAllocated = sizeof(L) + sizeof(R);
-		extraMemoryAllocated += (n1 * sizeof(L)) + (n2 *sizeof(R));
+		extraMemoryAllocated += sizeof(L) + sizeof(R);
 		
 
 		for (i = 0; i < n1; i++){
